@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
+import { SidebarService } from './service/sidebar.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'cwRetail';
+
+  constructor(public sidenavService: SidebarService) {}
+
+  getSideBarValue(): boolean {
+    return this.sidenavService.toggleNav.value;
+  }
 }

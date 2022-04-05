@@ -1,0 +1,13 @@
+.center {
+  text-align: center;
+}
+
+.form {
+  width: 600px;
+  margin: auto;
+  padding: 24px 0px;
+}
+
+.mat-form-field {
+  width: 100%;
+}

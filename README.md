@@ -1,27 +1,33 @@
-# CwRetail
+# Code challenge
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.5.
+This Task is for a Retail Company, write a Products Management Solution. Following are more details around
+acceptance criteria, key attributes, and expectations.
 
-## Development server
+It required following features:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Display all products on the page in tabular format
+- Products should be able to sort by header click
+- Only 5 products should be displayed on each page and allow user to navigate
+- Edit and delete product options should be available on the products table
+- New product can be created using add button available above the products table
+- Delete product should prompt for confirmation upon click
+- Edit click should navigate to another page and load with product details
+- Add click should navigate to another page and validate fields on submit click
 
-## Code scaffolding
+## Prerequisites
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+You will need nodejs and npm to run the project.
 
-## Build
+## Install dev
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `npm install`
+
+## Run project in local
+
+Run `ng serve`
+Then open [http://localhost:4200/](http://localhost:4200/)
 
 ## Running unit tests
 
+I used Karma to unit tests. Most of the code has been covered.
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

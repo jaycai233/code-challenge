@@ -1,0 +1,147 @@
+table {
+  width: 100%;
+}
+
+th.mat-sort-header-sorted {
+  color: black;
+}
+
+.container {
+  position: relative;
+  min-height: 200px;
+}
+
+.table-loading-shade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 56px;
+  right: 0;
+  background: rgba(0, 0, 0, 0.15);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-container {
+  position: relative;
+  /* height: 400px; */
+  overflow: auto;
+}
+
+.mat-column-type,
+.mat-column-active,
+.mat-column-price,
+.mat-column-name {
+  width: 20%;
+}
+
+
+.action-section {
+  display: flex;
+}
+
+td.mat-column-action {
+  width: 20px;
+  padding-right: 8px !important;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+@media screen and (max-width: 960px) {
+
+  .mat-header-row {
+    display: none;
+  }
+
+  tbody {
+    display: block;
+    width: 100%;
+  }
+
+  .mat-table {
+    background: transparent;
+  }
+
+  .mat-table * {
+    box-sizing: border-box;
+  }
+
+  .mat-table .mat-row {
+    display: block;
+    overflow: hidden;
+    height: auto;
+    position: relative;
+    clear: both;
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12);
+    background-color: rgb(66, 66, 66);
+    border-radius: 3px;
+  }
+
+  .mat-table .mat-row+.mat-row {
+    margin-top: 24px;
+  }
+
+  .mat-table .mat-cell {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    border: 0 none;
+  }
+
+  .mat-table .mat-cell:first-child a {
+    font-size: 20px;
+    color: inherit;
+  }
+
+  .mat-table .mat-cell:first-child:before {
+    display: none;
+  }
+
+
+  .mat-table .mobile-label:before {
+    content: attr(data-label);
+    display: inline;
+    font-weight: normal;
+    text-align: left;
+  }
+
+  .mat-table .mobile-label {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: right;
+    word-break: break-word;
+    border-bottom: 1px solid rgba(255, 255, 255, .12);
+    vertical-align: auto;
+  }
+
+  .action-section {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .mat-table .product-name {
+    font-size: 20px;
+  }
+
+  /* .mat-table .mat-column-action {
+    width: auto;
+    padding: 8px 0 0 !important;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+  } */
+
+  .mat-table .mat-column-action:before {
+    display: none;
+  }
+
+  .mat-paginator {
+    margin-top: 24px;
+  }
+}

@@ -1,0 +1,45 @@
+<div class="m-20">
+  <div class="title">
+    <h2>Products</h2>
+  </div>
+  <div class="mat-app-background center">
+
+    <form class="form" [formGroup]="productForm" (ngSubmit)="productForm.valid && submit(productForm.value)">
+      <div class="form-fields">
+        <mat-form-field appearance="outline">
+          <mat-label>Name</mat-label>
+          <input formControlName="name" matInput placeholder="Enter your name">
+          <mat-error *ngIf="!productForm.controls['name'].valid && productForm.controls['name'].touched">
+            Please enter valid Name
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Price</mat-label>
+          <input type="number" formControlName="price" matInput placeholder="Enter your price">
+          <mat-error *ngIf="!productForm.controls['price'].valid && productForm.controls['price'].touched">
+            Please enter valid price
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Type</mat-label>
+          <mat-select formControlName='type'>
+            <mat-option *ngFor="let each of typeList " [value]="each.value">
+              {{each.value}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Active</mat-label>
+          <mat-select formControlName='active'>
+            <mat-option *ngFor="let each of activeList " [value]="each.value">
+              {{each.value}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="container">
+        <button mat-raised-button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>

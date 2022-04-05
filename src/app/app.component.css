@@ -1,0 +1,7 @@
+.example-container {
+  background: #eee;
+}
+
+.sidenav-height {
+  min-height: calc(100vh - 64px);
+}
