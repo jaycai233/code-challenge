@@ -30,4 +30,5 @@ Then open [http://localhost:4200/](http://localhost:4200/)
 ## Running unit tests
 
 I used Karma to unit tests. Most of the code has been covered.
+
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
